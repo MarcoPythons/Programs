@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\Proyecto_Onbreak\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\Proyecto_Onbreak\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90712F2D-351F-4E3B-AE66-9C11C6D69FC3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnBrakeDatos</RootNamespace>
+    <AssemblyName>OnBrakeDatos</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\Proyecto_Onbreak\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\Proyecto_Onbreak\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActividadEmpresa.cs">
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cenas.cs">
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cocktail.cs">
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CoffeeBreak.cs">
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato.cs">
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModalidadServicio.cs">
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OnBrake2EDM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnBrake2EDM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OnBrake2EDM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OnBrake2EDM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnBrake2EDM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Respaldo.cs">
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoAmbientacion.cs">
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoEmpresa.cs">
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoEvento.cs">
+      <DependentUpon>OnBrake2EDM.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="OnBrake2EDM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>OnBrake2EDM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="OnBrake2EDM.edmx.diagram">
+      <DependentUpon>OnBrake2EDM.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OnBrake2EDM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OnBrake2EDM.edmx</DependentUpon>
+      <LastGenOutput>OnBrake2EDM.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="OnBrake2EDM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OnBrake2EDM.edmx</DependentUpon>
+      <LastGenOutput>OnBrake2EDM.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\Proyecto_Onbreak\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\Proyecto_Onbreak\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\Proyecto_Onbreak\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\Proyecto_Onbreak\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\Proyecto_Onbreak\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\Proyecto_Onbreak\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>

@@ -1,0 +1,72 @@
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.csprojAssemblyReference.cache
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Resources\Icons.baml
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\MainWindow.g.cs
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\App.g.cs
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak_MarkupCompile.cache
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak_MarkupCompile.lref
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\Proyecto_Onbreak.exe.config
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\Proyecto_Onbreak.exe
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\Proyecto_Onbreak.pdb
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\ControlzEx.dll
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\MahApps.Metro.dll
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\ControlzEx.pdb
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\MahApps.Metro.pdb
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\MahApps.Metro.xml
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\App.baml
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\MainWindow.baml
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.g.resources
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.Properties.Resources.resources
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.csproj.GenerateResource.cache
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.csproj.CoreCompileInputs.cache
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.csproj.CopyComplete
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.exe
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.pdb
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\EntityFramework.dll
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\EntityFramework.xml
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak_Content.g.cs
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Administracion de clientes.g.cs
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Administracion de clientes.baml
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\OnBrakeDatos.dll
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\OnBrakeNegocio.dll
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\OnBrakeDatos.pdb
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\OnBrakeDatos.dll.config
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\OnBrakeNegocio.pdb
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\bin\Debug\OnBrakeNegocio.dll.config
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Administracion de contratos.g.cs
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Administracion de contratos.baml
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.csprojAssemblyReference.cache
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Resources\Icons.baml
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\MainWindow.g.cs
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Administracion de clientes.g.cs
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\App.g.cs
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak_Content.g.cs
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak_MarkupCompile.cache
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak_MarkupCompile.lref
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.exe
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.pdb
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\Proyecto_Onbreak.exe.config
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\Proyecto_Onbreak.exe
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\Proyecto_Onbreak.pdb
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\ControlzEx.dll
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\EntityFramework.dll
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\MahApps.Metro.dll
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\ControlzEx.pdb
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\EntityFramework.xml
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\MahApps.Metro.pdb
+C:\Users\Maily\Desktop\Proyecto_Onbreak\bin\Debug\MahApps.Metro.xml
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\App.baml
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\MainWindow.baml
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Administracion de clientes.baml
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.g.resources
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.Properties.Resources.resources
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.csproj.GenerateResource.cache
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.csproj.CoreCompileInputs.cache
+C:\Users\Maily\Desktop\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.csproj.CopyComplete

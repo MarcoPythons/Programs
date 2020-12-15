@@ -1,0 +1,4 @@
+DBCC CHECKIDENT  (cliente, RESEED,1)
+
+
+para resetear el identity

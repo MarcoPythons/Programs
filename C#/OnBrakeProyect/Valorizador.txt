@@ -1,0 +1,2 @@
+Para la tabla valorizador se debe hacer un calculo de cuanto vale un contrato y luego dejar ese valor en la tabla
+valorizador y debe llevar el id de un contrato

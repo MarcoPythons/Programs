@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OnBrakeZModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ActividadEmpresa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="rut" Type="int" Nullable="false" />
+    <Property Name="DV" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="RazonSocial" Type="varchar" MaxLength="100" />
+    <Property Name="NombreContacto" Type="varchar" MaxLength="100" />
+    <Property Name="MailContacto" Type="varchar" MaxLength="100" />
+    <Property Name="Direccion" Type="varchar" MaxLength="100" />
+    <Property Name="Telefono" Type="int" />
+    <Property Name="Actividad" Type="int" Nullable="false" />
+    <Property Name="Tipo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contrato">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeroContrato" Type="bigint" />
+    <Property Name="Creacion" Type="date" Nullable="false" />
+    <Property Name="Termino" Type="date" />
+    <Property Name="FechaHoraInicio" Type="time" Precision="7" />
+    <Property Name="FechaHoraTermino" Type="time" Precision="7" />
+    <Property Name="Direccion" Type="varchar" MaxLength="100" />
+    <Property Name="EstaVigente" Type="bit" Nullable="false" />
+    <Property Name="Tipo" Type="int" Nullable="false" />
+    <Property Name="Observaciones" Type="varchar" MaxLength="250" />
+    <Property Name="idCliente" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TipoEmpresa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TipoEvento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ValorBase" Type="int" Nullable="false" />
+    <Property Name="PersonalBase" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Valorizador">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ValorContratoCliente" Type="int" />
+    <Property Name="RecargoAsistentes" Type="int" />
+    <Property Name="RecargoPersonal" Type="int" />
+  </EntityType>
+  <Association Name="FK_Cliente_ActividadEmpresa">
+    <End Role="ActividadEmpresa" Type="Self.ActividadEmpresa" Multiplicity="1" />
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActividadEmpresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="Actividad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cliente_TipoEmpresa">
+    <End Role="TipoEmpresa" Type="Self.TipoEmpresa" Multiplicity="1" />
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoEmpresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contrato_Cliente">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Contrato">
+        <PropertyRef Name="idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contrato_TipoEvento">
+    <End Role="TipoEvento" Type="Self.TipoEvento" Multiplicity="1" />
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoEvento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Contrato">
+        <PropertyRef Name="Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valorizador_Contrato">
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="1" />
+    <End Role="Valorizador" Type="Self.Valorizador" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Contrato">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Valorizador">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="OnBrakeZModelStoreContainer">
+    <EntitySet Name="ActividadEmpresa" EntityType="Self.ActividadEmpresa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contrato" EntityType="Self.Contrato" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoEmpresa" EntityType="Self.TipoEmpresa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoEvento" EntityType="Self.TipoEvento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Valorizador" EntityType="Self.Valorizador" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Cliente_ActividadEmpresa" Association="Self.FK_Cliente_ActividadEmpresa">
+      <End Role="ActividadEmpresa" EntitySet="ActividadEmpresa" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cliente_TipoEmpresa" Association="Self.FK_Cliente_TipoEmpresa">
+      <End Role="TipoEmpresa" EntitySet="TipoEmpresa" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contrato_Cliente" Association="Self.FK_Contrato_Cliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Contrato" EntitySet="Contrato" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contrato_TipoEvento" Association="Self.FK_Contrato_TipoEvento">
+      <End Role="TipoEvento" EntitySet="TipoEvento" />
+      <End Role="Contrato" EntitySet="Contrato" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valorizador_Contrato" Association="Self.FK_Valorizador_Contrato">
+      <End Role="Contrato" EntitySet="Contrato" />
+      <End Role="Valorizador" EntitySet="Valorizador" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

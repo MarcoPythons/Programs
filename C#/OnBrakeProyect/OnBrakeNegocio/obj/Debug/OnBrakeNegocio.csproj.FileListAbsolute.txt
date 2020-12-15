@@ -1,0 +1,30 @@
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\OnBrakeNegocio.dll.config
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\OnBrakeNegocio.dll
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\OnBrakeNegocio.pdb
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\EntityFramework.dll
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\OnBrakeDatos.dll
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\OnBrakeDatos.pdb
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\OnBrakeDatos.dll.config
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\EntityFramework.xml
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\obj\Debug\OnBrakeNegocio.csprojAssemblyReference.cache
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\obj\Debug\OnBrakeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\obj\Debug\OnBrakeNegocio.csproj.CopyComplete
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\obj\Debug\OnBrakeNegocio.dll
+C:\Users\Maily\Desktop\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\obj\Debug\OnBrakeNegocio.pdb
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\OnBrakeNegocio.dll.config
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\OnBrakeNegocio.dll
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\OnBrakeNegocio.pdb
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\EntityFramework.dll
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\EntityFramework.SqlServer.dll
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\OnBrakeDatos.dll
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\OnBrakeDatos.pdb
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\OnBrakeDatos.dll.config
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\EntityFramework.xml
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\bin\Debug\EntityFramework.SqlServer.xml
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\obj\Debug\OnBrakeNegocio.csprojAssemblyReference.cache
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\obj\Debug\OnBrakeNegocio.csproj.CoreCompileInputs.cache
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\obj\Debug\OnBrakeNegocio.csproj.CopyComplete
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\obj\Debug\OnBrakeNegocio.dll
+O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\OnBrakeNegocio\obj\Debug\OnBrakeNegocio.pdb

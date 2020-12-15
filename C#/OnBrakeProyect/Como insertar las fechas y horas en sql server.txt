@@ -1,0 +1,17 @@
+para la fecha se usa la funcion .ToShortDateString
+
+ejemplo
+
+
+DateTime fecha = DateTime.Today;   <-- la fecha del sistema
+
+
+Console.WriteLine(fecha.ToShortDateString()) <---- impresion en consola
+
+
+-----------------
+
+en sql server para insertar datos de tipo date y time es asi
+
+insert into Contrato (id, NumeroContrato, Creacion, Termino, FechaHoraInicio, FechaHoraTermino, Direccion, EstaVigente, Tipo, Observaciones )
+values(1, 20203805,convert(date,'18/06/2020',105), convert(date, '20/05/2021',105),CAST('6:10 PM' AS DATETIME2), CAST('6:20 AM' AS DATETIME2), 'tu puta casa', 1, 1, 'Tu puta familia');
