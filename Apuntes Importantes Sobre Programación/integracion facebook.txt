@@ -1,0 +1,92 @@
+/** PASOS EN DEVELOPERS FACEBOOK **/
+
+/***************    PASO 1    **********************/
+
+1. Inicia sesion en facebook
+
+/***************    PASO 2    **********************/
+
+2. Accede a esta pagina: developers.facebook.com
+
+/***************    PASO 3    **********************/
+
+3. presiona opcion Mis Apps
+
+/***************    PASO 4    **********************/
+
+4. presiona opcion crear app
+
+/***************    PASO 5    **********************/
+
+5. presiona opcion otra
+
+/***************    PASO 6    **********************/
+
+6. Introducir nombre de la app y correo, luego presionar crear app, marcar el reCaptcha y enviar.
+
+/***************    PASO 7    **********************/
+
+7. Luego se pone la opcion configurar facebook, ingresar la url : localhost:8000 y dar siguiente a los demas pasos.
+
+/***************    PASO 8    **********************/
+
+8. lo ultimo, es ir a configuracion -> basica y luego guardar la clave de identificador de la app y la clave secreta de la app que se utilizaran en los siguientes paso en visual.
+
+/** PASOS EN VISUAL STUDIO CODE  **/
+
+/***************    PASO 1    **********************/
+
+
+1- Instalar paquete social para django
+pip install social-auth-app-django
+
+
+/***************    PASO 2    **********************/
+
+
+2.-Agregar las siguientes lineas en archivo settings.py
+ 
+a- en instaled_apps agregar el siguiente modulo 
+
+* 'social_django'
+        
+Además agregar las siguientes lineas
+        
+* SOCIAL_AUTH_FACEBOOK_KEY = 'key' -> Key de la app de facebook
+
+* SOCIAL_AUTH_FACEBOOK_SECRET = 'secret' -> key secreta dada por facebook
+
+
+
+
+b- En middleware agregar 'social_django.middleware.SocialAuthExceptionMiddleware',
+
+
+c- en contextprocessors agregar estas dos lineas al final de arreglo:
+'social_django.context_processors.backends',
+'social_django.context_processors.login_redirect',
+
+
+d- Al final del documento settings.py agregar las siguientes lineas:
+        
+AUTHENTICATION_BACKENDS = (
+'social_core.backends.facebook.FacebookOAuth2',
+'django.contrib.auth.backends.ModelBackend',
+)
+
+/***************    PASO 3    **********************/
+
+
+3.Agregar la siguiente linea en las urls de la carpeta principal
+
+
+path('oauth/', include('social_django.urls', namespace='social'))
+
+
+/***************    PASO 4    **********************/
+
+
+4.Agregar la siguiente linea en el archivo login.html
+
+
+<a href="{% url 'social:begin' 'facebook' %}" class="btn btn-secondary">facebook</a>

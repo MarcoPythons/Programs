@@ -12,6 +12,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['192.168.0.5']
 
+AUTH_USER_MODEL = "registros.usuario"
+LOGIN_REDIRECT_URL = '/home/'  # donde se redirigira el sitio despues de hacer login
+# donde se redirigira el sitio despues de hacer logout
+LOGOUT_REDIRECT_URL = '/home/'
+
 
 
 INSTALLED_APPS = [
@@ -21,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'registros',
 ]
 
 MIDDLEWARE = [
