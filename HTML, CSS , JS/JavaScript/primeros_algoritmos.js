@@ -12,4 +12,10 @@
  * 	- ECMASCRIPT (5.1 y 6, 7, 8, next)
  */
 
+let a = "hola mundo"
+let b = 1
+function suma(a, b){
+return a + b;
+}
+console.log(suma(a, b));
 

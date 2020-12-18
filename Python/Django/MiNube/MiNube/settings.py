@@ -17,6 +17,7 @@ LOGIN_REDIRECT_URL = '/home/'  # donde se redirigira el sitio despues de hacer l
 # donde se redirigira el sitio despues de hacer logout
 LOGOUT_REDIRECT_URL = '/home/'
 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'MiNube/templates/static'), ]
 
 
 INSTALLED_APPS = [
@@ -44,7 +45,7 @@ ROOT_URLCONF = 'MiNube.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR),'Minube/templates/pages'],
+        'DIRS': [os.path.join(BASE_DIR),'MiNube/templates/pages'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
