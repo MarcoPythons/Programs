@@ -1,0 +1,12 @@
+create table usuario(
+	
+  	id 
+
+
+
+
+
+
+
+)
+

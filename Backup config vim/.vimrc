@@ -54,7 +54,8 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <Leader>w :w <CR>
 nmap <Leader>q :q <CR>
-nmap <Leader>e :e .vimrc<cr>
+nmap <Leader>e :e .vimrc<cr> 
+nmap <Leader>ho :cd $HOME<cr>
 nmap <Leader>py <Plug>(Prettier)
 nmap <Leader>pl :PlugInstall<CR>
 noremap <Leader>gs :CocSearch 
@@ -137,8 +138,8 @@ autocmd FileType scss setl iskeyword+=@-@
 "nerd tree configuration
   
 autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif 
-autocmd vimenter * NERDTree $Programming
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif 
+"autocmd vimenter * NERDTree $Programming
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let NERDTreeDirArrows=1

@@ -32,7 +32,7 @@ class ClienteForm(forms.ModelForm):
 
     class Meta:
         model = usuario
-        fields = (  'username') #aca se pueden editar los tags html de los campos del modelo
+        fields = ('username',) #aca se pueden editar los tags html de los campos del modelo
         labels = {
             'username':'Nombre de usuario',
             
@@ -46,7 +46,7 @@ class ClienteForm(forms.ModelForm):
                 'name': 'username',
                 'placeholder': 'Ingresa un Nombre de usuario',
                 'required':'required'
-            }),
+            })}
     def clean_password(self): #aqui validamos la contraseña
         password1 = self.cleaned_data.get('password1')
         password2 = self.cleaned_data.get('password2')

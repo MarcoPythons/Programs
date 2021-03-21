@@ -17,7 +17,7 @@ using MahApps.Metro.Controls.Dialogs;
 using OnBrakeDatos;
 
 namespace Proyecto_Onbreak
-{
+
     /// <summary>
     /// Lógica de interacción para Listado_de_Clientes.xaml
     /// </summary>

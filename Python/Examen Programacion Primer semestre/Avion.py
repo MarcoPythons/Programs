@@ -22,7 +22,7 @@ venta_avion1= int(0) #Es la el numero del asiento que el cliente comprara (1-33)
 print("")
 
 opcion = int(0) # sirve para practicamente iniciar ciclos, esa es su unica funcion
-def disponibilidad_avion():   #esta funcion sirve para imprimir el avion, esta funcion la trabajamos y le hicimos algunos cambios ENTRE MARCO PEÑA Y NICOLAS GARCEZ
+def disponibilidad_avion():   #esta funcion sirve para imprimir el avion, esta funcion la trabajamos y le hicimos algunos cambios ENTRE MARCO PEÑA
     print("  " , end= "")
     for pos1 in range(1,34):
         print(str(pos1) + " " ,end= "")
@@ -39,12 +39,12 @@ def disponibilidad_avion():   #esta funcion sirve para imprimir el avion, esta f
         print("")
     for pos1 in range(1,35):
         print(Tipoasiento[pos1]+" ", end="")
-def lista_avion():                                      #esta funcion sirve para imprimir la lista de pasajeros de menor a mayor, DESARROLLADO POR MASTER PROMMUNGKAO
+def lista_avion():#esta funcion sirve para imprimir la lista de pasajeros de menor a mayor
   rut_avion.sort()
   print("                                ")         
   print(rut_avion[1:])
   print("                                ")
-def OpcionFila(ValorNumerico): #esta funcion es para cambiar "LETRAS" a "NUMEROS". DESARROLLADO POR MARCO PEÑA
+def OpcionFila(ValorNumerico): #esta funcion es para cambiar "LETRAS" a "NUMEROS".
     Letra = venta_avion.upper()
     ValorNumerico = int(ord(Letra))
     return ValorNumerico
@@ -57,7 +57,7 @@ def buscaRut(rut): #esta funcion sirve para buscar ruts en la lista de avion
         print("                                ")
         print("este pasajero no esta registrado en el avion")
         print("                                ")
-def Numero(venta_avion_numero1):        #esta funcion sirve para restar el numero que da la letra de la fila, por ejemplo, cuando el usuario digita "F" este sera 70 y apartir de ahi se restara. DESARROLLADO POR MARCO PEÑA
+def Numero(venta_avion_numero1):#esta funcion sirve para restar el numero que da la letra de la fila, por ejemplo, cuando el usuario digita "F" este sera 70 y apartir de ahi se restara.
     if venta_avion_numero == 70:                      
         venta_avion_numero1 = venta_avion_numero - 70
     elif venta_avion_numero == 69:
@@ -123,7 +123,7 @@ while opcion != 7:
         print("Opcion no valida")
 
 
-    if opcion == 1:    # toda la opcion uno fue desarrollada por marco peña
+    if opcion == 1:   
         while True:
             try:
                 entradas=int(input("Cuantos pasajes quiere comprar? "))
