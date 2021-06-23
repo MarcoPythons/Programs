@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OnBrakeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ActividadEmpresa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK_Cliente_ActividadEmpresa" FromRole="ActividadEmpresa" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rut" Type="Int32" Nullable="false" />
+    <Property Name="DV" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="RazonSocial" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NombreContacto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MailContacto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="Int32" />
+    <Property Name="Actividad" Type="Int32" Nullable="false" />
+    <Property Name="Tipo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ActividadEmpresa" Relationship="Self.FK_Cliente_ActividadEmpresa" FromRole="Cliente" ToRole="ActividadEmpresa" />
+    <NavigationProperty Name="TipoEmpresa" Relationship="Self.FK_Cliente_TipoEmpresa" FromRole="Cliente" ToRole="TipoEmpresa" />
+    <NavigationProperty Name="Contrato" Relationship="Self.FK_Contrato_Cliente" FromRole="Cliente" ToRole="Contrato" />
+    <NavigationProperty Name="Valorizador" Relationship="Self.FK_Valorizador_Cliente" FromRole="Cliente" ToRole="Valorizador" />
+  </EntityType>
+  <EntityType Name="Contrato">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroContrato" Type="Int64" />
+    <Property Name="Creacion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Termino" Type="DateTime" Precision="0" />
+    <Property Name="FechaHoraInicio" Type="Time" Precision="7" />
+    <Property Name="FechaHoraTermino" Type="Time" Precision="7" />
+    <Property Name="Direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EstaVigente" Type="Boolean" Nullable="false" />
+    <Property Name="Tipo" Type="Int32" Nullable="false" />
+    <Property Name="Observaciones" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK_Contrato_Cliente" FromRole="Contrato" ToRole="Cliente" />
+    <NavigationProperty Name="TipoEvento" Relationship="Self.FK_Contrato_TipoEvento" FromRole="Contrato" ToRole="TipoEvento" />
+    <NavigationProperty Name="Valorizador" Relationship="Self.FK_Valorizador_Contrato" FromRole="Contrato" ToRole="Valorizador" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TipoEmpresa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK_Cliente_TipoEmpresa" FromRole="TipoEmpresa" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="TipoEvento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ValorBase" Type="Int32" Nullable="false" />
+    <Property Name="PersonalBase" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Contrato" Relationship="Self.FK_Contrato_TipoEvento" FromRole="TipoEvento" ToRole="Contrato" />
+  </EntityType>
+  <EntityType Name="Valorizador">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ValorContratoCliente" Type="Int32" />
+    <Property Name="RecargoAsistentes" Type="Int32" />
+    <Property Name="RecargoPersonal" Type="Int32" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK_Valorizador_Cliente" FromRole="Valorizador" ToRole="Cliente" />
+    <NavigationProperty Name="Contrato" Relationship="Self.FK_Valorizador_Contrato" FromRole="Valorizador" ToRole="Contrato" />
+  </EntityType>
+  <Association Name="FK_Cliente_ActividadEmpresa">
+    <End Role="ActividadEmpresa" Type="Self.ActividadEmpresa" Multiplicity="1" />
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActividadEmpresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="Actividad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cliente_TipoEmpresa">
+    <End Role="TipoEmpresa" Type="Self.TipoEmpresa" Multiplicity="1" />
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoEmpresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contrato_Cliente">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Contrato">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valorizador_Cliente">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Valorizador" Type="Self.Valorizador" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Valorizador">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contrato_TipoEvento">
+    <End Role="TipoEvento" Type="Self.TipoEvento" Multiplicity="1" />
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoEvento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Contrato">
+        <PropertyRef Name="Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valorizador_Contrato">
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="1" />
+    <End Role="Valorizador" Type="Self.Valorizador" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Contrato">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Valorizador">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="OnBrakeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ActividadEmpresa" EntityType="Self.ActividadEmpresa" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="Contrato" EntityType="Self.Contrato" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TipoEmpresa" EntityType="Self.TipoEmpresa" />
+    <EntitySet Name="TipoEvento" EntityType="Self.TipoEvento" />
+    <EntitySet Name="Valorizador" EntityType="Self.Valorizador" />
+    <AssociationSet Name="FK_Cliente_ActividadEmpresa" Association="Self.FK_Cliente_ActividadEmpresa">
+      <End Role="ActividadEmpresa" EntitySet="ActividadEmpresa" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cliente_TipoEmpresa" Association="Self.FK_Cliente_TipoEmpresa">
+      <End Role="TipoEmpresa" EntitySet="TipoEmpresa" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contrato_Cliente" Association="Self.FK_Contrato_Cliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Contrato" EntitySet="Contrato" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valorizador_Cliente" Association="Self.FK_Valorizador_Cliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Valorizador" EntitySet="Valorizador" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contrato_TipoEvento" Association="Self.FK_Contrato_TipoEvento">
+      <End Role="TipoEvento" EntitySet="TipoEvento" />
+      <End Role="Contrato" EntitySet="Contrato" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valorizador_Contrato" Association="Self.FK_Valorizador_Contrato">
+      <End Role="Contrato" EntitySet="Contrato" />
+      <End Role="Valorizador" EntitySet="Valorizador" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

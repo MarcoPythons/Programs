@@ -1,0 +1,14 @@
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\bin\Debug\OracleNegocio.dll.config
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\bin\Debug\OracleNegocio.dll
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\bin\Debug\OracleNegocio.pdb
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\bin\Debug\ADO.Conn.dll
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\bin\Debug\EntityFramework.dll
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\bin\Debug\ADO.Conn.pdb
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\bin\Debug\ADO.Conn.dll.config
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\bin\Debug\EntityFramework.xml
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\obj\Debug\OracleNegocio.csprojAssemblyReference.cache
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\obj\Debug\OracleNegocio.csproj.CoreCompileInputs.cache
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\obj\Debug\OracleNegocio.csproj.CopyComplete
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\obj\Debug\OracleNegocio.dll
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\obj\Debug\OracleNegocio.pdb
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\OracleNegocio\bin\Debug\Oracle.ManagedDataAccess.dll

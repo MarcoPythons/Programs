@@ -1,0 +1,148 @@
+﻿<Controls:MetroWindow x:Class="Proyecto_Onbreak.Administracion_de_contratos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_Onbreak"
+        mc:Ignorable="d"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Administración de contratos" Height="567" Width="1280" 
+        BorderThickness="0" GlowBrush="Aqua" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        >
+    <ScrollViewer CanContentScroll="True">
+        <Grid x:Name="Vigente" Height="1013" >
+            <Grid.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF3A00FF" Offset="1"/>
+                    <GradientStop Color="#FF0017FF"/>
+                </RadialGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Fecha Inicio" HorizontalAlignment="Left" Margin="42,87,0,0" VerticalAlignment="Top" Width="87" FontWeight="Bold" Foreground="White" Height="26"/>
+            <TextBox x:Name="Fecha" HorizontalAlignment="Left"  Controls:TextBoxHelper.Watermark="12/02/2019" Height="26" Margin="140,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" />
+            <Expander x:Name="Expansor" Header="Calendario" HorizontalAlignment="Left" Height="217" Margin="342,87,0,0" VerticalAlignment="Top" Width="171" IsExpanded="False">
+                <Expander.Background>
+                    <ImageBrush ImageSource="Imagenes/download.png" Stretch="Uniform">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform X="0.4"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Expander.Background>
+                <Calendar x:Name="MiCalendario" SelectionMode="SingleDate" HorizontalAlignment="Left" Height="193" Margin="0,0,-10,0" Width="186" SelectedDatesChanged="MiCalendario_SelectedDatesChanged"/>
+            </Expander>
+            <Label x:Name="F" Content="Fecha Termino" HorizontalAlignment="Left" Margin="17,576,0,0" VerticalAlignment="Top" Width="102" FontWeight="Bold" Foreground="White" Height="26"/>
+            <TextBox x:Name="FechaTermino" HorizontalAlignment="Left"  Controls:TextBoxHelper.Watermark="12/02/2019" Height="26" Margin="139,576,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" RenderTransformOrigin="0.548,3.788" />
+            <Expander x:Name="ExpansorTermino" Header="Calendario" HorizontalAlignment="Left" Height="218" Margin="371,569,0,0" VerticalAlignment="Top" Width="172" IsExpanded="False">
+                <Expander.Background>
+                    <ImageBrush ImageSource="Imagenes/download.png" Stretch="Uniform">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform X="0.4"/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Expander.Background>
+                <Calendar x:Name="MiCalendarioTermino" SelectionMode="SingleDate" HorizontalAlignment="Left" Height="193" Margin="0,0,-10,0" Width="186" SelectedDatesChanged="MiCalendarioTermino_SelectedDatesChanged"/>
+            </Expander>
+            <Label Content="" HorizontalAlignment="Left" Margin="1068,10,0,0" VerticalAlignment="Top" Height="138" Width="176">
+                <Label.Background>
+                    <ImageBrush ImageSource="Imagenes/dark_logo_transparent_background.png"/>
+                </Label.Background>
+            </Label>
+            <Label Content="Hora Inicio" HorizontalAlignment="Left" Margin="42,145,0,0" VerticalAlignment="Top" Width="87" FontWeight="Bold" Foreground="White" Height="26"/>
+            <TextBox x:Name="HoraInicio" ToolTip="FORMATO 24 HORAS" HorizontalAlignment="Left"  Controls:TextBoxHelper.Watermark="7:00" Height="26" Margin="140,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" />
+            <Label Content="Hora Termino" HorizontalAlignment="Left" Margin="24,711,0,0" VerticalAlignment="Top" Width="87" FontWeight="Bold" Foreground="White" Height="26"/>
+            <TextBox x:Name="HoraTermino" HorizontalAlignment="Left"  Controls:TextBoxHelper.Watermark="23:59 " Height="26" Margin="139,712,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Tag="" ToolTip="FORMATO 24 HORAS"  />
+            <Label Content="Evento Realizado" HorizontalAlignment="Left" Margin="24,203,0,0" VerticalAlignment="Top" Width="108" FontWeight="Bold" Foreground="White" Height="26"/>
+            <RadioButton x:Name="Realizado" Content="SI" HorizontalAlignment="Left" Margin="139,207,0,0" VerticalAlignment="Top" Foreground="White" Height="18" Width="65" GroupName="1"/>
+            <RadioButton x:Name="NoRealizado" Content="No&#xD;&#xA;" HorizontalAlignment="Left" Margin="205,207,0,0" VerticalAlignment="Top" Foreground="White" Height="18" Width="82" GroupName="1" />
+            <Label Content="Tipo Evento" HorizontalAlignment="Left" Margin="42,258,0,0" VerticalAlignment="Top" Width="87" FontWeight="Bold" Foreground="White" Height="26"/>
+            <ComboBox x:Name="TipoCombobox" HorizontalAlignment="Left" Margin="140,258,0,0" VerticalAlignment="Top" Width="193" Height="26" >
+                <ComboBoxItem Content="Coffee Break" HorizontalAlignment="Left" Width="191" Selected="ComboBoxItem_Selected_2"/>
+                <ComboBoxItem Content="Cocktail" HorizontalAlignment="Left" Width="191" Selected="ComboBoxItem_Selected"/>
+                <ComboBoxItem Content="Cenas" HorizontalAlignment="Left" Width="191" Selected="ComboBoxItem_Selected_1"/>
+            </ComboBox>
+            <Label Content="Observaciones" HorizontalAlignment="Left" Margin="17,791,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" Foreground="White" Height="26"/>
+            <TextBox x:Name="Observaciones" HorizontalAlignment="Left" Controls:TextBoxHelper.Watermark="Observaciones"  Height="82" Margin="139,792,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282"/>
+            <Button x:Name="BuscarPorNumero_De_contrato" Content="Buscar " HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="1115,263,0,0" VerticalAlignment="Top" Width="108" Height="32" Click="BuscarPorNumero_De_contrato_Click" RenderTransformOrigin="1.523,7.047"/>
+            <Button x:Name="CrearContrato" Content="Crear Contrato" HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="105,901,0,0" VerticalAlignment="Top" Width="182" Height="67" Click="CrearContrato_Click"/>
+            <Button x:Name="ActualizarContrato" Content="Actualizar Contrato" HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="416,901,0,0" VerticalAlignment="Top" Width="182" Height="67" Click="ActualizarContrato_Click"/>
+            <Button x:Name="TerminarContrato" Content="Terminar Contrato" HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="732,901,0,0" VerticalAlignment="Top" Width="182" Height="67" Click="TerminarContrato_Click_1" RenderTransformOrigin="0.514,2.276"/>
+            <TextBox x:Name="BuscaPorNumeroContrato" HorizontalAlignment="Left"  Controls:TextBoxHelper.Watermark="202003191800" Height="26" Margin="1115,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+            <Label Content="Buscar Contrato" HorizontalAlignment="Left" Margin="1115,184,0,0" VerticalAlignment="Top" Width="108" FontWeight="Bold" Foreground="White" Height="26"/>
+            <Button x:Name="Salir" Content="Salir" HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="1041,901,0,0" VerticalAlignment="Top" Width="182" Height="67" Click="Salir_Click"/>
+            <Button x:Name="Calcular_Valor_Contrato" Content="Calcular Válor Contrato" HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="770,499,0,0" VerticalAlignment="Top" Width="154" Height="64" Click="Calcular_Valor_Contrato_Click"/>
+            <Label Content="* Campo Obligatorio, si un campo se encuentra desabilitado no es obligatorio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,8,0,0" Width="450" FontWeight="Bold" Foreground="#FF9B9A9A" Height="26"/>
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="115,143,0,0" Width="21" FontWeight="Bold" Foreground="#FF9B9A9A" Height="26"/>
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="116,711,0,0" Width="27" FontWeight="Bold" Foreground="#FF9B9A9A" Height="26" RenderTransformOrigin="0.593,3.5"/>
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="115,87,0,0" Width="20" FontWeight="Bold" Foreground="#FF9B9A9A" Height="26"/>
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,258,0,0" Width="18" FontWeight="Bold" Foreground="#FF9B9A9A" RenderTransformOrigin="0.411,0.423" Height="26"/>
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="118,825,0,0" Width="16" FontWeight="Bold" Foreground="#FF9B9A9A" Height="26" RenderTransformOrigin="1.444,0.897"/>
+            <Label x:Name="Vigente1" Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,203,0,0" Width="16" FontWeight="Bold" Foreground="#FF9B9A9A" Height="26"/>
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="104,576,0,0" Width="15" FontWeight="Bold" Foreground="#FF9B9A9A" Height="26" RenderTransformOrigin="0.733,0.577"/>
+            <Label Content="Razon Social" HorizontalAlignment="Left" Margin="45,34,0,0" VerticalAlignment="Top" Width="83" Foreground="White" FontWeight="Bold" Height="26"/>
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,34,0,0" Width="15" FontWeight="Bold" Foreground="#FF9B9A9A" Height="26"/>
+            <TextBox x:Name="RutCliente" HorizontalAlignment="Left"  Controls:TextBoxHelper.Watermark="Marco's Corp" Height="26" Margin="139,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" />
+            <TextBox x:Name="Asistentes" HorizontalAlignment="Left"  Controls:TextBoxHelper.Watermark="ASISTENTES" Height="26" Margin="808,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
+            <TextBox x:Name="PersonalAdicional" HorizontalAlignment="Left"  Controls:TextBoxHelper.Watermark="PERSONAL ADICIONAL" Height="26" Margin="808,448,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
+            <TextBox x:Name="ValorContrato" HorizontalAlignment="Left"  Controls:TextBoxHelper.Watermark="VALOR CONTRATO" Height="26" Margin="740,664,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+            <Label Content="Asistentes del evento" HorizontalAlignment="Left" Margin="784,308,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold" Foreground="White" Height="26"/>
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="896,347,0,0" Width="28" FontWeight="Bold" Foreground="#FF9B9A9A" Height="26" RenderTransformOrigin="-0.153,5.242">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-19.067"/>
+                        <TranslateTransform X="41.28" Y="-0.793"/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label Content="Personal adicional para el evento" HorizontalAlignment="Left" Margin="740,408,0,0" VerticalAlignment="Top" Width="196" FontWeight="Bold" Foreground="White" Height="26"/>
+            <Label Content="Valor total del contrato" HorizontalAlignment="Left" Margin="770,600,0,0" VerticalAlignment="Top" Width="144" FontWeight="Bold" Foreground="White" Height="26"/>
+            <ComboBox x:Name="ModalidadComboBox" HorizontalAlignment="Left" Margin="140,320,0,0" VerticalAlignment="Top" Width="193" Height="26">
+            </ComboBox>
+            <Label Content="Modalidad del evento" HorizontalAlignment="Left" Margin="1,320,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" Foreground="White" Height="26"/>
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="124,320,0,0" Width="18" FontWeight="Bold" Foreground="#FF9B9A9A" RenderTransformOrigin="0.411,0.423" Height="26"/>
+            <Button x:Name="ConsultaPrecios" Content="Consultar precios por temas de asistentes y personal adicional" HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="658,697,0,0" VerticalAlignment="Top" Width="350" Height="66"  FontWeight="Normal" Click="ConsultaPrecios_Click"/>
+            <Button  x:Name="ListadoContratos"  Content="Listado Contratos&#xA;" HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="630,56,0,0" VerticalAlignment="Top" Width="334" Height="67" Click="ListadoClientes_Click" />
+            <Button  x:Name="ListadoClientes"  Content="Listado de clientes&#xA;" HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="630,162,0,0" VerticalAlignment="Top" Width="334" Height="67" Click="ListadoClientes_Click_1"  />
+            <Label Content="Tipo de ambientación" HorizontalAlignment="Left" Margin="-1,388,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" Foreground="White" Height="26"/>
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="128,388,0,0" Width="18" FontWeight="Bold" Foreground="#FF9B9A9A" RenderTransformOrigin="0.411,0.423" Height="26"/>
+            <ComboBox x:Name="Tipo_ambientacion" HorizontalAlignment="Left" Margin="146,388,0,0" VerticalAlignment="Top" Width="193" Height="26">
+                <ComboBoxItem Content="Básica" HorizontalAlignment="Left" Width="191" />
+                <ComboBoxItem Content="Personalizada" HorizontalAlignment="Left" Width="191"/>
+                <ComboBoxItem Content="Sin Ambientación" HorizontalAlignment="Left" Width="191"/>
+            </ComboBox>
+            <Label Content="Musica Ambiental" HorizontalAlignment="Left" Margin="3,457,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" Foreground="White" Height="26"/>
+            <Label Content="Musica Cliente" HorizontalAlignment="Left" Margin="6,501,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" Foreground="White" Height="26"/>
+            <RadioButton x:Name="MusicaA_si" Content="SI" HorizontalAlignment="Left" Margin="148,457,0,0" VerticalAlignment="Top" Foreground="White" Height="18" Width="65" GroupName="2"/>
+            <RadioButton x:Name="MusicaA_no" Content="No&#xA;" HorizontalAlignment="Left" Margin="214,457,0,0" VerticalAlignment="Top" Foreground="White" Height="18" Width="82" GroupName="2" />
+            <RadioButton x:Name="MusicaC_si" Content="SI" HorizontalAlignment="Left" Margin="148,506,0,0" VerticalAlignment="Top" Foreground="White" Height="18" Width="65" GroupName="3"/>
+            <RadioButton x:Name="MusicaC_no" Content="No&#xA;" HorizontalAlignment="Left" Margin="214,506,0,0" VerticalAlignment="Top" Foreground="White" Height="18" Width="82" GroupName="3" />
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="128,502,0,0" Width="18" FontWeight="Bold" Foreground="#FF9B9A9A" RenderTransformOrigin="0.411,0.423" Height="26"/>
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="128,457,0,0" Width="18" FontWeight="Bold" Foreground="#FF9B9A9A" RenderTransformOrigin="0.411,0.423" Height="26"/>
+            <ComboBox x:Name="local" HorizontalAlignment="Left" Margin="139,630,0,0" VerticalAlignment="Top" Width="193" Height="26">
+                <ComboBoxItem Content="Local OnBrake" HorizontalAlignment="Left" Width="191" />
+                <ComboBoxItem Content="Otro" HorizontalAlignment="Left" Width="191"/>
+
+            </ComboBox>
+            <Label x:Name="F_Copy" Content="Local" HorizontalAlignment="Left" Margin="17,629,0,0" VerticalAlignment="Top" Width="102" FontWeight="Bold" Foreground="White" Height="26"/>
+            <Label Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="104,624,0,0" Width="15" FontWeight="Bold" Foreground="#FF9B9A9A" Height="26" RenderTransformOrigin="0.733,0.577"/>
+            <Label x:Name="R" Content="" HorizontalAlignment="Left" Margin="850,10,0,0" VerticalAlignment="Top" Width="158" Foreground="White" FontWeight="Bold" Height="26"/>
+
+
+        </Grid>
+    </ScrollViewer>
+</Controls:MetroWindow>

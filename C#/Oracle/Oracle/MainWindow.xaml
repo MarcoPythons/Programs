@@ -1,0 +1,32 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oracle"
+        xmlns:Conn="clr-namespace:ADO.Conn;assembly=ADO.Conn" x:Class="Oracle.MainWindow"
+        mc:Ignorable="d"
+        Title="Crud Con Oracle" Height="450" Width="800" Background="Gray" Loaded="Window_Loaded">
+    <Grid>
+
+        <DataGrid x:Name="DataEmpleados" HorizontalAlignment="Left" Height="118" Margin="366,45,0,0" VerticalAlignment="Top" Width="397" SelectionUnit="Cell"  />
+        <Button x:Name="Actualizar" Content="Buscar" HorizontalAlignment="Left" Margin="590,214,0,0" VerticalAlignment="Top" Width="140" Click="Button_Click" Height="53"/>
+        <Button x:Name="Modificar" Content="Modificar" HorizontalAlignment="Left" Margin="391,292,0,0" VerticalAlignment="Top" Width="141" Height="53" Click="Modificar_Click"/>
+        <Button x:Name="Eliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="590,292,0,0" VerticalAlignment="Top" Width="140" RenderTransformOrigin="-0.895,0.725" Height="53" Click="Eliminar_Click"/>
+        <Button x:Name="Insertar" Content="Insertar" HorizontalAlignment="Left" Margin="391,214,0,0" VerticalAlignment="Top" Width="143" Height="53" Click="Insertar_Click"/>
+        <TextBox x:Name="idEmpleado" HorizontalAlignment="Left" Height="24" Margin="126,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="rutEmpleado" HorizontalAlignment="Left" Height="24" Margin="126,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nombreEmpleado" HorizontalAlignment="Left" Height="24" Margin="126,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="apellidoEmpleado" HorizontalAlignment="Left" Height="24" Margin="126,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Id" HorizontalAlignment="Left" Margin="32,65,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="nombre" HorizontalAlignment="Left" Margin="32,119,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="apellido" HorizontalAlignment="Left" Margin="32,169,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="rut" HorizontalAlignment="Left" Margin="32,228,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Estado Civil" HorizontalAlignment="Left" Margin="32,292,0,0" VerticalAlignment="Top" Width="76"/>
+        <ComboBox x:Name="estadoCivilEmpelado" HorizontalAlignment="Left" Margin="126,292,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.175,0.773" >
+            <ComboBoxItem Content="Soltero" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Casado" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+
+    </Grid>
+</Window>

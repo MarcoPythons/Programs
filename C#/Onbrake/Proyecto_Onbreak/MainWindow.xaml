@@ -1,0 +1,70 @@
+﻿<Controls:MetroWindow x:Class="Proyecto_Onbreak.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_Onbreak"
+        mc:Ignorable="d"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        ResizeMode="NoResize"  WindowStartupLocation="CenterScreen" BorderBrush="Aqua" GlowBrush="Aqua"
+        Title="OnBreak" Height="449.5" Width="947">
+    <Grid Margin="0,0,-6,-5">
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF3A00FF" Offset="1"/>
+                <GradientStop Color="#FF0017FF"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="521*"/>
+            <ColumnDefinition Width="573*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="AdministracionClientesImage" HorizontalAlignment="Left"  Margin="18,10,0,0" VerticalAlignment="Top" Width="205" Click="AdministracionClientesImage_Click_1" Height="110" FontSize="48" FontStyle="Italic" FontWeight="Bold" Controls:ControlsHelper.ContentCharacterCasing="Upper" Foreground="Red">
+            <Button.Background>
+                <ImageBrush ImageSource="Imagenes/20200505_192204.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="40,114,0,0"
+                VerticalAlignment="Top" Width="208" Height="106" Grid.Column="1" Click="Button_Click_3">
+            <Button.Background>
+                <ImageBrush ImageSource="Imagenes/Imagenes.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="18,125,0,0" VerticalAlignment="Top" Width="472" Height="82" Background="#FFB9B9B9" Click="Button_Click_2" Grid.ColumnSpan="2">
+            <TextBlock TextWrapping="Wrap" Height="36" Width="206" FontWeight="Bold" FontSize="22" TextAlignment="Center"><Run Text="Listado de Clientes"/><InlineUIContainer>
+                    <Label Content="Label"/>
+                </InlineUIContainer></TextBlock>
+        </Button>
+        <Button HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="221,220,0,0" VerticalAlignment="Top" Width="477" Height="82" Background="#FF5850F3" Click="Button_Click" Grid.ColumnSpan="2">
+            <TextBlock TextWrapping="Wrap" Height="78" Width="229" FontWeight="Bold" FontSize="22" TextAlignment="Center"><Run Text="Administraci"/><Run Text="ón"/><Run Text=" de Contratos"/></TextBlock>
+        </Button>
+        <Button HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="25,325,0,0" VerticalAlignment="Top" Width="478" Height="82" Background="#FF8A85FF" Grid.ColumnSpan="2" Click="Button_Click_4">
+            <TextBlock TextWrapping="Wrap" Text="Listado de Contratos" Height="58" Width="207" FontWeight="Bold" FontSize="22" TextAlignment="Center"/>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="18,212,0,0" VerticalAlignment="Top" Width="203" Height="105" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="Imagenes/20200505_192216.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="AdministracionClientesLetters" HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="223,24,0,0" VerticalAlignment="Top" Width="477" Grid.ColumnSpan="2" Height="90" Background="#FF4B7BBF" Click="AdministracionClientesLetters_Click">
+            <TextBlock TextWrapping="Wrap" Height="62" Width="256" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" TextAlignment="Center"><Run Text="Administra"/><Run Text="ción de              Clientes"/></TextBlock>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Style="{StaticResource AccentedSquareButtonStyle}" Margin="50,302,0,0" VerticalAlignment="Top" Width="203" Height="124" Grid.Column="1" Click="Button_Click_5">
+            <Button.Background>
+                <ImageBrush ImageSource="Imagenes/20200505_192154.jpg"/>
+            </Button.Background>
+        </Button>
+        <Label Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="290,114,0,0" VerticalAlignment="Top" Height="177" Width="195">
+            <Label.Background>
+                <ImageBrush ImageSource="Imagenes/logo_transparent_background.png"/>
+            </Label.Background>
+        </Label>
+    </Grid>
+</Controls:MetroWindow>

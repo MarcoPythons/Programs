@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	{% include 'base.html' %}
+
+	<body class="main-layout">
+		<div class="loader_bg">
+			<div class="loader">
+				<img src="{% static 'images/loading.gif' %}" alt="#" />
+			</div>
+		</div>
+
+		{% include 'header.html' %}
+
+		<section class="banner_main">
+			<div class="container">
+				<div class="row d_flex">
+					<div class="col-md-5">
+						<div class="text-bg">
+							<h1 class="colores">Servicio Técnico</h1>
+							<span>Marco Peña </span>
+							<p class="colores">
+								Dedicado a computadores de escritorio y notebook windows
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-7">
+						<div class="text-img">
+							<figure><img src="{% static 'images/pc3.png' %}" /></figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="about" class="hosting">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="titlepage">
+							<h2>¿Quién soy?</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="web_hosting">
+							<figure>
+								<img src="{% static 'images/aboutme.png' %}" alt="#" />
+							</figure>
+							<p>
+								Me llamo Marco Peña Romero, tengo 22 años y soy estudiante de
+								Ingeniería de Software de tercer año en Duoc UC. Empezé en el
+								mundo del PC hace 3 años, cuento con experiencia y conocimientos
+								técnicos necesarios para desarrollar el mejor servicio técnico.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="service" class="Services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="titlepage">
+							<h2 class="servicio">Servicios Ofrecidos</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+						<div class="Services-box">
+							<i><img src="{% static 'images/switch.png' %}" alt="#" /></i>
+							<h3>Cambio de Switches</h3>
+							<p>
+								Se cambian switches a teclados mecánicos y la limpieza del teclado está incluida
+							</p>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+						<div class="Services-box">
+							<i><img src="{% static 'images/pc2.png' %}" alt="#" /></i>
+							<h3>Mantenimiento de equipos</h3>
+							<p>
+								Realizo mantenimiento a tu equipo. Esto incluye limpieza y Cable
+								Management
+							</p>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+						<div class="Services-box">
+							<i><img src="{% static 'images/coti2.png' %}" alt="#" /></i>
+							<h3>Cotizaciones</h3>
+							<p>
+								Se realizan cotizaciones de tu PC ajustada a tus
+								necesidades(Ofimjtica, Gamer, Casual)
+							</p>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+						<div class="Services-box">
+							<i><img src="{% static 'images/home.png' %}" alt="#" /></i>
+							<h3>Trabajos a domicilio</h3>
+							<p>
+								No necesitas salir de tu hogar, contactame y la solucón llegará
+								a la puerta de tu casa
+							</p>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+						<div class="Services-box">
+							<i><img src="{% static 'images/window.png' %}" alt="#" /></i>
+							<h3>Instalación de sistemas operativos</h3>
+							<p>
+								Se hace un completo formateo tu equipo y se le instala el
+								sistema operativo Windows
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="why" class="why">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="titlepage">
+							<h2>¿Por qué deberías escogerme?</h2>
+							<p>
+								Porque te ofrezco
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+						<div id="box_ho" class="why-box">
+							<i><img src="{% static 'images/1.png' %}" alt="#" /></i>
+							<h3>Transparencia</h3>
+							<p>siempre te mantendré informado sobre el estado de su equipo</p>
+						</div>
+						<! -- a class="read_more bg" href="#"Leer más a -->
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+						<div class="why-box">
+							<i><img src="{% static 'images/2.png' %}" alt="#" /></i>
+							<h3>Confianza</h3>
+							<p>
+								El correcto funcionamiento de su equipo es siempre la prioridad
+							</p>
+						</div>
+						<! -- a class="read_more bg" href="#"Leer más a -->
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+						<div class="why-box">
+							<i><img src="{% static 'images/3.png' %}" alt="#" /></i>
+							<h3>Rapidez</h3>
+							<p>
+								Mi trabajo se caracteriza por la rapidez y por la calidad de
+								este
+							</p>
+						</div>
+						<! -- a class="read_more bg" href="#"Leer más a -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{% include 'footer.html' %} {% include 'js.html' %}
+	</body>
+</html>

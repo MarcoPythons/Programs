@@ -1,0 +1,10 @@
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\ADO.Conn\bin\Debug\ADO.Conn.dll.config
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\ADO.Conn\bin\Debug\ADO.Conn.dll
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\ADO.Conn\bin\Debug\ADO.Conn.pdb
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\ADO.Conn\bin\Debug\EntityFramework.dll
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\ADO.Conn\bin\Debug\EntityFramework.xml
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\ADO.Conn\obj\Debug\OracleConn.csproj.CoreCompileInputs.cache
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\ADO.Conn\obj\Debug\OracleConn.csproj.CopyComplete
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\ADO.Conn\obj\Debug\ADO.Conn.dll
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\ADO.Conn\obj\Debug\ADO.Conn.pdb
+C:\Marco Cosas\ProgrammingHere\C#\Oracle\ADO.Conn\bin\Debug\Oracle.ManagedDataAccess.dll

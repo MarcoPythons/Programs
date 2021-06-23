@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle", "Oracle.csproj", "{6465DAF6-6B65-4E33-A42B-465B17508465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OracleConn", "..\ADO.Conn\OracleConn.csproj", "{1670FC99-0032-4807-98A7-4700C01F4A82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OracleNegocio", "..\OracleNegocio\OracleNegocio.csproj", "{EA3D8B19-7487-4470-BEA8-F7C6995B4243}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6465DAF6-6B65-4E33-A42B-465B17508465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6465DAF6-6B65-4E33-A42B-465B17508465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6465DAF6-6B65-4E33-A42B-465B17508465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6465DAF6-6B65-4E33-A42B-465B17508465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1670FC99-0032-4807-98A7-4700C01F4A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1670FC99-0032-4807-98A7-4700C01F4A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1670FC99-0032-4807-98A7-4700C01F4A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1670FC99-0032-4807-98A7-4700C01F4A82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA3D8B19-7487-4470-BEA8-F7C6995B4243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA3D8B19-7487-4470-BEA8-F7C6995B4243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA3D8B19-7487-4470-BEA8-F7C6995B4243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA3D8B19-7487-4470-BEA8-F7C6995B4243}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00A34CB2-FE6F-4205-B998-3956BE6E2959}
+	EndGlobalSection
+EndGlobal

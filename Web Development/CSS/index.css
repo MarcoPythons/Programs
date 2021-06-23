@@ -1,0 +1,10 @@
+body {
+	background-color: #9a0000;
+	color: White;
+	font-family: Comic Sans MS, arial;
+}
+
+iframe {
+	width: 800px;
+	height: 400px;
+}

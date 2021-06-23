@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OraConnOracle19", "OraConnOracle19.csproj", "{26F4054F-9292-4D4E-BCB6-90BC7392347F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlador", "..\Controlador\Controlador.csproj", "{3F5E8EFD-AEA2-4C04-BDC2-94DBA3284494}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "..\Modelo\Modelo.csproj", "{52212F5A-6368-44CE-A04F-18A9031E1EB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26F4054F-9292-4D4E-BCB6-90BC7392347F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F4054F-9292-4D4E-BCB6-90BC7392347F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F4054F-9292-4D4E-BCB6-90BC7392347F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F4054F-9292-4D4E-BCB6-90BC7392347F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F5E8EFD-AEA2-4C04-BDC2-94DBA3284494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5E8EFD-AEA2-4C04-BDC2-94DBA3284494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5E8EFD-AEA2-4C04-BDC2-94DBA3284494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5E8EFD-AEA2-4C04-BDC2-94DBA3284494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52212F5A-6368-44CE-A04F-18A9031E1EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52212F5A-6368-44CE-A04F-18A9031E1EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52212F5A-6368-44CE-A04F-18A9031E1EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52212F5A-6368-44CE-A04F-18A9031E1EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC8CAD16-99A0-4E20-9AFF-DC24A692AB3B}
+	EndGlobalSection
+EndGlobal

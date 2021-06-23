@@ -1,0 +1,15 @@
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\obj\Debug\OraConnOracle19.csprojAssemblyReference.cache
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\obj\Debug\App.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\obj\Debug\OraConnOracle19_MarkupCompile.cache
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\obj\Debug\MainWindow.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\obj\Debug\OraConnOracle19_MarkupCompile.lref
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\bin\Debug\OraConnOracle19.exe.config
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\bin\Debug\OraConnOracle19.exe
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\bin\Debug\OraConnOracle19.pdb
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\obj\Debug\MainWindow.baml
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\obj\Debug\OraConnOracle19.g.resources
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\obj\Debug\OraConnOracle19.Properties.Resources.resources
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\obj\Debug\OraConnOracle19.csproj.GenerateResource.cache
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\obj\Debug\OraConnOracle19.csproj.CoreCompileInputs.cache
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\obj\Debug\OraConnOracle19.exe
+C:\Marco Cosas\ProgrammingHere\C#\OraConn19\OraConnOracle19\obj\Debug\OraConnOracle19.pdb

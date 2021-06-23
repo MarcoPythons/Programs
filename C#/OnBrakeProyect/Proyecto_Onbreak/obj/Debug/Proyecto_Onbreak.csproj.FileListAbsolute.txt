@@ -90,3 +90,18 @@ O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\
 O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.csproj.CopyComplete
 O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.exe
 O:\1 Escritorio\Materias Antonio Varas\DESARROLLO DE SOFTWARE\Trabajo 1\Avances\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.pdb
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.csprojAssemblyReference.cache
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\Resources\Icons.baml
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\Resources\IconsNonShared.baml
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\Administracion de contratos.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\CalculoValorContrato.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\Listado de Clientes.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\Listado de Contratos.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\MainWindow.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\Administracion de clientes.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\App.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak_Content.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak_MarkupCompile.cache
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak_MarkupCompile.lref
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.exe
+C:\Marco Cosas\ProgrammingHere\C#\OnBrakeProyect\Proyecto_Onbreak\obj\Debug\Proyecto_Onbreak.pdb

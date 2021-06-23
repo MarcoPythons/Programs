@@ -1,0 +1,3 @@
+pip install cx_oracle
+pip install django
+

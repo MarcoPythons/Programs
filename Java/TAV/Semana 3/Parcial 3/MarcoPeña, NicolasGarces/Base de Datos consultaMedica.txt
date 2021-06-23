@@ -1,0 +1,14 @@
+create table pacientes(
+    rut varchar(12) primary key not null,
+    nombre varchar(60)  not null,
+    genero varchar(1) not null,
+    edad int not null,
+    direccion varchar(60) not null,
+    ciudad varchar(45) not null,
+    isapre varchar(1) not null,
+    donante boolean not null
+ );
+
+insert into pacientes values ('20.203.805-0', 'Marco Antonio Peña Romero','M', 20 , 'Francisco antonio Encina 1781', 'Santiago ', 'N', false);
+insert into pacientes values ('19.156.554-k', 'Nicolas Garces','M', 20 , 'Av Pajaritos 18', 'Santiago ', 'S', true);
+select * from pacientes;

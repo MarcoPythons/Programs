@@ -1,0 +1,104 @@
+¿Que es una base de datos?
+
+
+Dato: Es una representación simbólica, que puede ser vista como números, letras, hechos, situaciones, entre otros.
+Son hechos de la vida real que  deben ser recordados, por ese motivo son almacenamiento.
+
+Información: Conjunto de datos que están adecuadamente procesados y entregan un mensaje al receptor. 
+Mensaje que ayudará a tomar decisiones frente a determinados problemas y/o situaciones que se presenten la vida cotidiana.
+
+La información debe ser:
+	-Exacta
+	-Relevante
+	-Confiabilidad
+	-Completa
+	-Puntual
+
+SGBD: Un sistema gestor y administrador de dabes de datos, es un conjunto de programas que permite crear y mantener una base
+de datos, asegurando su integridad, confiabilidad y seguridad de los datos.
+Permiten definir, construir y manipular una base de datos.
+
+Proporcionan 4 tipos de lenguaje.
+
+DDL(Data definition languageI): Permite definir la estructura de las base de datos. Se utilizan comandos tales como:
+	-CREATE
+	-ALTER
+	-DROP
+	-TRUNCATE
+
+DML (Data Management language): Permite acceder a los datos almacenados. Se utilizan comandos tales como:
+	-SELECT
+	-INSERT
+	-UPDATE
+	-DELETE
+
+DCL(Data control language): Permite definir controles de seguridad sobre objetos de la base de datos. Se utilizan comandos tales como:
+	-GRANT
+	-REVOKE
+TCL (Transaction control language): Permite confirmar o deshacer cambios realizados por sentencias DML. Se utilizan comandos tales como:
+	-COMMIT
+	-ROLLBACK
+	-SAVEPOINT
+
+
+
+Diseño de una Base de datos (DB):
+
+Requerimientos de usuarios ----------> modelo conceptual de datos, M.E.R. (MODELO ENTIDAD-RELACIÓN) ----------> Normalización
+
+Modelo Relacional (M.R.) -------> Modelo físico ---------> BASE DE DATOS
+
+
+
+Modelo Entidad Relación: Modelo que representa objetos de la vida real, sus caracteristicas y la relación entre ellos.
+
+Entidad: Objetos reales o abstractos que aparecen en la vida real. Una entidad es por ejemplo una persona, un auto, un servicio de lavado, etc.
+Para definir una entidad se debe pensar en un sustantivo(objeto). Un sustantivo puede ser entendido como un objeto, no solo físico sino que tambien puede ser intangible.
+
+La representacion de una entidad, se verá como un rectángulo con puntas curvas, con el nombre de la entidad en su interior, que debe ser escrito en MAYÚSCULAS  y de forma 
+singular.
+
+Atributos: son caracteristicas de una entidad. esta puede tener uno o más atributos. P. EJ: Los atributos de una persona pueden ser el rut, la dirección y su fecha de nacimiento.
+Es una propiedad caracteristica de las entidades. El nombre del atributo se debe escribir en minúscula y en singular.
+el atributo puede ser obligatorios y puede ser opcional.
+
+
+Relación: Es como estan relacionadas las entidades.
+Tipos de relaciones:
+	-1 a 1: Las entidades que intervienen se relaciones una a una. Por ejemplo, una persona se relaciona contra otra persona a travéz de la relación matrimonio.
+	-1 a N: Una ocurrencioa de la primera entidad puede estar relacionada con muchas de la sugunda entidad. Por ejemplo, la entidad Universidad se relaciona con la entidad
+		Profesor de la forma 1 a muchos, ya que una universidad puede tner contratados a muchos profesores.
+	-M a N: Cada ocurrencia, en cualquiera de las 2 entidades de la relación, puede estar asociada con muchas de la otra entidad. Por ejemplo, un alumno tiene muchas
+		asignaturas, y una misma asignatura tiene muchos alumnos.
+
+
+¿Es Importartante esta etapa?
+
+En este modelo se deben realizar las correcciones que sean necesarios para cumplir con las expectativas de los usuarios, ya que si existiese un error en etapas posteriores
+debido a una mala definición del modelo conceptual, podría desviar en gran proporción el proyecto.
+ 
+
+Identificador único: Es el atributo que me permite identificar de forma unica a una entidad(Objeto)
+
+
+Normalización: Aplicación de una serie de reglas que minimiza los riesgos asociados a la redundancia, inconsistencia e integridad de los datos. Su objetivo es mejorar el modelo 
+conceptual para luego poder avanzar hacia el modelo relacional.
+
+Primera forma normal: Elimina los grupos repetitivos.
+Segunda forma normal: Elimina las dependencias parciales.
+Tercera forma normal: Elimina dependencias transitivas.
+
+
+
+1FN (Primera forma normal): 
+		-Contiene solo valores atómicos.
+		-Ningun atributo ten más de un valor para cada instancia de la entidad.
+
+2FN (Segunda forma normal):
+		-Está en 1FN y se han eliminado las dependencias parciales entre  sus atributos.
+		-Se debe verificar que cada identificador único determina una sola ocurrencia para cada atributo.
+		-Se debe asegurar que un atributo NO depende solo de una parte del identificador único de la entidad.
+
+3FN (Tercera forma normal): 
+		-Está en 2FN y no contiene dependencias transitivas
+		-Ningún atributo que no sea único puede depender de otro que tampoco sea único.

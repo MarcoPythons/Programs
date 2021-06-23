@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  {% include 'index.html' %}
+	<body>
+		<section class="container xmt-70px">
+			<div class="xregister-form">
+				<h2>Crea tu Cuenta</h2>
+
+				<form method="POST">
+					{% csrf_token %} {{form.as_p}}
+					<input type="submit" value="Registrar" />
+				</form>
+			</div>
+		</section>
+	</body>
+</html>

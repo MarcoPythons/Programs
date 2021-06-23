@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OnBrake1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ActividadEmpresa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="rut" Type="int" Nullable="false" />
+    <Property Name="DV" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="RazonSocial" Type="varchar" MaxLength="100" />
+    <Property Name="NombreContacto" Type="varchar" MaxLength="100" />
+    <Property Name="MailContacto" Type="varchar" MaxLength="100" />
+    <Property Name="Direccion" Type="varchar" MaxLength="100" />
+    <Property Name="Telefono" Type="int" />
+    <Property Name="Actividad" Type="int" />
+    <Property Name="Tipo" Type="int" />
+  </EntityType>
+  <EntityType Name="Contrato">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeroContrato" Type="int" Nullable="false" />
+    <Property Name="Creacion" Type="date" Nullable="false" />
+    <Property Name="Termino" Type="date" />
+    <Property Name="FechaHoraInicio" Type="date" />
+    <Property Name="FechaHoraTermino" Type="date" />
+    <Property Name="Direccion" Type="varchar" MaxLength="100" />
+    <Property Name="EstaVigente" Type="bit" Nullable="false" />
+    <Property Name="Tipo" Type="int" />
+    <Property Name="Observaciones" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="TipoEmpresa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TipoEvento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ValorBase" Type="int" Nullable="false" />
+    <Property Name="PersonalBase" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Varolizador">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ValorContratoCliente" Type="int" />
+  </EntityType>
+  <EntityContainer Name="OnBrake1ModelStoreContainer">
+    <EntitySet Name="ActividadEmpresa" EntityType="Self.ActividadEmpresa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contrato" EntityType="Self.Contrato" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoEmpresa" EntityType="Self.TipoEmpresa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoEvento" EntityType="Self.TipoEvento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Varolizador" EntityType="Self.Varolizador" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

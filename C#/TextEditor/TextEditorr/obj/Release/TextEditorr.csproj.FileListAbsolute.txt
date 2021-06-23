@@ -1,0 +1,38 @@
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\Black notepad.exe.config
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\Black notepad.exe.manifest
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\Black notepad.application
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\Black notepad.exe
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\Black notepad.pdb
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\ControlzEx.dll
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\EntityFramework.dll
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\EntityFramework.SqlServer.dll
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\MahApps.Metro.dll
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\Microsoft.Xaml.Behaviors.dll
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\ControlzEx.pdb
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\ControlzEx.xml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\EntityFramework.xml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\EntityFramework.SqlServer.xml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\MahApps.Metro.pdb
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\MahApps.Metro.xml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\Microsoft.Xaml.Behaviors.pdb
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\Microsoft.Xaml.Behaviors.xml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Release\de\MahApps.Metro.resources.dll
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\TextEditorr.csprojAssemblyReference.cache
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\MainWindow.baml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\Resources\Icons.baml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\Resources\IconsNonShared.baml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\MainWindow.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\App.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\Black notepad_Content.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\Black notepad_MarkupCompile.cache
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\Black notepad_MarkupCompile.lref
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\App.baml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\Black notepad.g.resources
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\TextEditorr.Properties.Resources.resources
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\TextEditorr.csproj.GenerateResource.cache
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\TextEditorr.csproj.CoreCompileInputs.cache
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\Black notepad.exe.manifest
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\Black notepad.application
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\TextEditorr.csproj.CopyComplete
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\Black notepad.exe
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Release\Black notepad.pdb

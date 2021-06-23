@@ -1,0 +1,14 @@
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\bin\Debug\Modelo.dll.config
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\bin\Debug\Modelo.dll
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\bin\Debug\Modelo.pdb
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\bin\Debug\Controlador.dll
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\bin\Debug\EntityFramework.dll
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\bin\Debug\Controlador.pdb
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\bin\Debug\Controlador.dll.config
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\bin\Debug\EntityFramework.xml
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\obj\Debug\Modelo.dll
+C:\Marco Cosas\ProgrammingHere\C#\Modelo\obj\Debug\Modelo.pdb

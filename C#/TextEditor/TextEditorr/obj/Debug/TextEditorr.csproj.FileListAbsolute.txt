@@ -1,0 +1,72 @@
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\TextEditorr.exe.config
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\TextEditorr.exe
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\TextEditorr.pdb
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.csprojAssemblyReference.cache
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\MainWindow.g.cs
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\App.g.cs
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr_MarkupCompile.cache
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\MainWindow.baml
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.g.resources
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.Properties.Resources.resources
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.csproj.GenerateResource.cache
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.csproj.CoreCompileInputs.cache
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.exe
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.pdb
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\ControlzEx.dll
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\MahApps.Metro.dll
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\Microsoft.Xaml.Behaviors.dll
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\ControlzEx.pdb
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\ControlzEx.xml
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\MahApps.Metro.pdb
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\MahApps.Metro.xml
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\Microsoft.Xaml.Behaviors.xml
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\de\MahApps.Metro.resources.dll
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.csproj.CopyComplete
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\Resources\Icons.baml
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\Resources\IconsNonShared.baml
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr_Content.g.cs
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\EntityFramework.dll
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\EntityFramework.SqlServer.dll
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\EntityFramework.xml
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\EntityFramework.SqlServer.xml
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr_MarkupCompile.lref
+F:\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\App.baml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\ControlzEx.dll
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\EntityFramework.dll
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\EntityFramework.SqlServer.dll
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\MahApps.Metro.dll
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\ControlzEx.pdb
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\ControlzEx.xml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\EntityFramework.xml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\EntityFramework.SqlServer.xml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\MahApps.Metro.pdb
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\MahApps.Metro.xml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\de\MahApps.Metro.resources.dll
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.csprojAssemblyReference.cache
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\MainWindow.baml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\Resources\Icons.baml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\Resources\IconsNonShared.baml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\MainWindow.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\App.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\App.baml
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.Properties.Resources.resources
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.csproj.GenerateResource.cache
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.csproj.CoreCompileInputs.cache
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\TextEditorr.csproj.CopyComplete
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\Black notepad.exe.config
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\Black notepad.exe
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\Black notepad.pdb
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\Black notepad_Content.g.cs
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\Black notepad_MarkupCompile.cache
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\Black notepad_MarkupCompile.lref
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\Black notepad.g.resources
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\Black notepad.exe
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\Black notepad.pdb
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\Black notepad.exe.manifest
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\bin\Debug\Black notepad.application
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\Black notepad.exe.manifest
+C:\Marco Cosas\ProgrammingHere\C#\TextEditor\TextEditorr\obj\Debug\Black notepad.application
