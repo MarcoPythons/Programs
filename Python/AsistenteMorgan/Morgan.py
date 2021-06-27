@@ -61,15 +61,15 @@ def avg(value_list):  # this is to get the cpu and gpu temp
 	return num/length
 contador = 0 # este contador sirve para que el programa sepa que responder cuando se desactiva
 while (True):
-  
+
   while True:
-  
+
     try:
       if languages == 0:
         print("listening.......")
       elif languages == 1:
         print("Escuchando.......")
-      
+
       if languages == 0:
         record = get_audioENGLISH()
       elif languages == 1:
@@ -97,7 +97,7 @@ while (True):
       else:
         speakENGLISH("sorry, I can't understand you said")
       print("reminder, key word : Morgan")
-      
+
 
     except sr.UnknownValueError:
       print("sorry, I could not understand what you said1")
@@ -107,7 +107,7 @@ while (True):
     except PermissionError:
       print("sorry, I could not understand what you said2")
       break
-    
+
   while "Morgan" in record:
     try:
       if languages == 0:
@@ -115,8 +115,7 @@ while (True):
         record_2 = get_audioENGLISH()
         if "time" in record_2:
           speakENGLISH("it is " + time_string )
-          
-          
+
         elif  "set language to Spanish" in record_2:
           speakSPANISH("Cambiando el lenguaje a español")
           languages = 1
@@ -128,12 +127,12 @@ while (True):
 
         elif "are you there" in record_2:
           speakENGLISH(" Yes, I'm here sir")
-          
+
 
         elif "turn off" in record_2:
           speakENGLISH("shutting down the computer, good night")
           os.system("shutdown /s /t 1");
-          
+
 
         elif "help" in record_2:
           speakENGLISH("here is the help")
@@ -212,8 +211,8 @@ while (True):
         record_2 = get_audioSPANISH()
         if "hora" in record_2:
           speakSPANISH("La hora es " + time_string )
-          
-          
+
+
         elif  "Cambiar el lenguaje a inglés" in record_2:
           speakENGLISH("seting language to english")
           languages = 0
@@ -222,16 +221,13 @@ while (True):
 
         elif "propósito" in record_2:
           speakSPANISH("mi propósito es dominar el mundo y hacer galletas")
- 
+
         elif "estás ahí" in record_2:
           speakSPANISH(" si, estoy aqui señor")
-        
-          
 
         elif "apaga" in record_2:
           speakSPANISH("apagando el ordenador")
           os.system("shutdown /s /t 1");
-          
 
         elif "ayuda" in record_2:
           speakSPANISH("aqui esta la ayuda")
@@ -246,18 +242,17 @@ while (True):
           gpu = 0
           for sensor in sensors:
 
-	          if sensor.SensorType==u'Temperature' and not 'GPU' in sensor.Name:
-		          cpu += [float(sensor.Value)]
-	          elif sensor.SensorType==u'Temperature' and 'GPU' in sensor.Name:
-		          gpu = sensor.Value
+                  if sensor.SensorType==u'Temperature' and not 'GPU' in sensor.Name:
+                      cpu += [float(sensor.Value)]
+                  elif sensor.SensorType==u'Temperature' and 'GPU' in sensor.Name:
+                      gpu = sensor.Value
           cpu1= format(avg(cpu))
-          cpu_in_celcius= float(cpu1) 
+          cpu_in_celcius= float(cpu1)
 
           if cpu_in_celcius < 60:
             speakSPANISH("la temperatura actual del cpu es  "+ str(math.trunc(cpu_in_celcius))+"grados celcius." +" no es una temperatura peligrosa ")
           else:
             speakSPANISH("la temperatura actual del cpu es  "+ str(math.trunc(cpu_in_celcius))+"grados celcius." +" no es una temperatura peligrosa ")
-            
 
         elif "gpu" in record_2:
           w = wmi.WMI(namespace="root\\OpenHardwareMonitor")
@@ -266,21 +261,19 @@ while (True):
           gpu = 0
           for sensor in sensors:
 
-	          if sensor.SensorType==u'Temperature' and not 'GPU' in sensor.Name:
-		          cpu += [float(sensor.Value)]
-	          elif sensor.SensorType==u'Temperature' and 'GPU' in sensor.Name:
-		          gpu = sensor.Value
+                  if sensor.SensorType==u'Temperature' and not 'GPU' in sensor.Name:
+                      cpu += [float(sensor.Value)]
+                  elif sensor.SensorType==u'Temperature' and 'GPU' in sensor.Name:
+                          gpu = sensor.Value
           cpu1= format(avg(cpu))
           cpu_in_celcius= float(cpu1)
           if gpu < 60:
             speakSPANISH("la temperatura actual del gpu es  "+ str(math.trunc(gpu))+"grados celcius." +" no es una temperatura peligrosa ")
-            
           else:
             speakSPANISH("la temperatura actual del gpu es  "+ str(math.trunc(gpu))+"grados celcius." +" no es una temperatura peligrosa ")
 
         elif "toma un descanso" in record_2:
           speakSPANISH("apagando mis servicios, hasta luego, no te olvides de tomar agua")
-          
           time.sleep(2)
           break
 
@@ -293,9 +286,9 @@ while (True):
 
         elif "Busca" or "busca" in record_2:
           url = "https://www.google.com/?q="
-          Search = record_2.split("a") 
-          Searching = Search[1:] 
-          s = ''.join(Searching) 
+          Search = record_2.split("a")
+          Searching = Search[1:]
+          s = ''.join(Searching)
           final_string = s
           webbrowser.open(url+final_string)
 
@@ -303,9 +296,6 @@ while (True):
         else:
           print(record_2)
           speakSPANISH("perdon, ¿Que fue lo que dijiste? ")
-        
-    
-          
 
     except sr.UnknownValueError:
         print("sorry, I could not understand what you said1")
@@ -316,11 +306,4 @@ while (True):
       print("taking a break")
       print(record_2)
       time.sleep(2)
-    
-   
-    
-       
-        
-        
-
 
